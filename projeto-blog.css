@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root{
+    --purple: #892CDC;
+    --dark-purple: #6A22AA;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    background: black;
+}
+
+body, button, input, select, textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--purple);
+}
+
+header{
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 85%;
+    height: fit-content;
+    padding: 0 300px;
+}
+
+header .container h1{
+    font-weight: 500;
+    font-size: 80px;
+
+    background: linear-gradient(180deg, #892CDC 1.43%, rgba(255, 255, 255, 0.75) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .container h2{
+    font-weight: 400;
+    font-size: 45px;
+    color: var(--dark-purple);
+}
+
+header .container p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.ellipse img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+}
+
+line{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 680px;
+
+    background: linear-gradient(90deg, rgba(137, 44, 220, 0.5) 20%, rgba(255, 255, 255, 0.75) 80%);
+    filter: blur(3px);
+}
+
+.social-media{
+    position: absolute;
+    margin: 255px;
+    top: 365px;
+}
+
+.social-media svg{
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    margin: 35px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 100px;
+    position: sticky;
+}
+
+nav ul a{
+    font-size: 30px;
+    color: var(--purple);
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+.sobre-mim{
+    height: fit-content;
+    margin: 200px;
+    width: 40%;
+}
+
+.sobre-mim p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.sobre-mim img{
+    position: absolute;
+    width: 730px;
+    height: 730px;
+    left: 1050px;
+    top: 1100px;
+}
+
+.servicos{
+    height: 650px;
+    margin: 120px;
+}
+
+.servicos h3{
+    text-align: center;
+}
+
+.servicos .container-1{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(137, 44, 220, 0.5) 100%);
+    border-radius: 40px;
+    border: 5px solid #FFF;
+}
+
+.servicos .container-1 svg{
+    position: absolute;
+
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+
+    top: 80px;
+    left: 155px;
+}
+
+.servicos .container-1 a{
+    position: absolute;
+
+    font-size: 35px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+
+    top: 200px;
+    margin: 50px;
+}
+
+.servicos .container-1 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF;
+    text-align: center;
+
+    top: 320px;
+    margin: 50px;
+}
+
+.servicos .container-2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+    margin-left: 625px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(137, 44, 220, 0.5) 100%);
+    border-radius: 40px;
+    border: 5px solid #FFF;
+}
+
+.servicos .container-2 svg{
+    position: absolute;
+
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+
+    top: 80px;
+    left: 155px;
+}
+
+.servicos .container-2 a{
+    position: absolute;
+
+    font-size: 35px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+
+    top: 200px;
+    margin: 50px;
+}
+
+.servicos .container-2 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF;
+    text-align: center;
+
+    top: 320px;
+    margin: 50px;
+}
+
+.servicos .container-3{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+    margin-left: 1225px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(137, 44, 220, 0.5) 100%);
+    border-radius: 40px;
+    border: 5px solid #FFF;
+}
+
+.servicos .container-3 svg{
+    position: absolute;
+
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+
+    top: 80px;
+    left: 155px;
+}
+
+.servicos .container-3 a{
+    position: absolute;
+
+    font-size: 35px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+
+    top: 200px;
+    margin: 50px;
+}
+
+.servicos .container-3 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF;
+    text-align: center;
+
+    top: 320px;
+    margin: 50px;
+}
+
+.portfolio{
+    height: 700px;
+    margin: 120px;
+}
+
+
+.portfolio h3{
+    text-align: center;
+}
+
+
+.portfolio .container-1{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+
+    background: linear-gradient(180deg, rgba(137, 44, 220, 0.85) 0%, rgba(137, 44, 220, 0) 100%);
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+.portfolio .container-1 h3{
+    position: absolute;
+
+    font-size: 30px;
+    color: #FFF;
+
+    top: 280px;
+    margin: 35px;
+}
+
+
+.portfolio .container-1 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    color: #FFF;
+
+    top: 320px;
+    margin: 35px;
+}
+
+.portfolio .container-1 screen{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 200px;
+
+    background: #000;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+
+    top: 40px;
+    left: 30px;
+}
+
+.portfolio .container-1 img{
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+
+.portfolio .container-2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+    margin-left: 625px;
+
+    background: linear-gradient(180deg, rgba(137, 44, 220, 0.85) 0%, rgba(137, 44, 220, 0) 100%);
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+
+.portfolio .container-2 h3{
+    position: absolute;
+
+    font-size: 30px;
+    color: #FFF;
+
+    top: 280px;
+    margin: 35px;
+}
+
+
+.portfolio .container-2 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    color: #FFF;
+
+    top: 320px;
+    margin: 35px;
+}
+
+.portfolio .container-2 screen{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 200px;
+
+    background: #000;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+
+    top: 40px;
+    left: 30px;
+}
+
+.portfolio .container-2 img{
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+
+.portfolio .container-3{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 550px;
+    margin-left: 1225px;
+
+    background: linear-gradient(180deg, rgba(137, 44, 220, 0.85) 0%, rgba(137, 44, 220, 0) 100%);
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+
+.portfolio .container-3 h3{
+    position: absolute;
+
+    font-size: 30px;
+    color: #FFF;
+
+    top: 280px;
+    margin: 35px;
+}
+
+
+.portfolio .container-3 p{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    color: #FFF;
+
+    top: 320px;
+    margin: 35px;
+}
+
+.portfolio .container-3 screen{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 200px;
+
+    background: #000;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+
+    top: 40px;
+    left: 30px;
+}
+
+.portfolio .container-3 img{
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+
+.portfolio shadow{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1650px;
+    height: 300px;
+    top: 2850px;
+
+    background: rgba(255, 255, 255, 0.8);
+    filter: blur(100px);
+    border-radius: 1000px;
+}
+
+.curriculo{
+    height: 600px;
+    margin: 120px;
+}
+
+.curriculo h3{
+    text-align: center;
+}
+
+.curriculo p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFF;
+
+    position: absolute;
+    top: 3580px;
+    left: 1000px;
+}
+
+.curriculo .dados p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFF;
+
+    position: absolute;
+    top: 3580px;
+    left: 1225px;
+}
+
+.curriculo .baixar{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 700px;
+    height: 100px;
+
+    background: #000;
+    border-radius: 25px;
+    border: 3px solid var(--purple);
+    
+    top: 4000px;
+    left: 1000px;
+}
+
+.curriculo .baixar p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 35px;
+    color: #FFF;
+
+    position: absolute;
+    top: -10px;
+    left: 110px;
+}
+
+.curriculo .baixar svg{
+    color: var(--purple);
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.encerramento h2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--purple);
+    text-align: center;
+
+    position: relative;
+    top: 100px;
+}
+
+.encerramento h3{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--purple);
+    text-align: center;
+
+    position: relative;
+    top: 80px;
+}
+
+.encerramento p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFF;
+
+    text-align: center;
+    width: 30%;
+
+    position: relative;
+    top: 120px;
+    left: 650px;
+}
+
+.encerramento .contato{
+    box-sizing: border-box;
+
+    width: 375px;
+    height: 100px;
+    background: #000;
+    border-radius: 25px;
+    border: 3px solid #FFF;
+
+    position: relative;
+    left: 765px;
+    top: 150px;
+}
+
+.encerramento .contato p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--purple);
+
+    width: 100%;
+    position: relative;
+    top: -10px;
+    left: 3px;
+}
+
+.encerramento img{
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+.encerramento .footer p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--purple);
+
+    width: 100%;
+    position: relative;
+    top: 210px;
+    left: 12px;
+}
